@@ -1,0 +1,9 @@
+name: test
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      XDG_CONFIG_HOME: /github/home/.config
+    steps:
+      - run: echo $XDG_CONFIG_HOME
